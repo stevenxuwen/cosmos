@@ -84,7 +84,7 @@ private:
     {
         bool full = m_queue.size() >= m_maxSize;
         if (full)
-            cout << "full, waiting，thread id: " << this_thread::get_id() << endl;
+            cout << "full, waiting,thread id: " << this_thread::get_id() << endl;
         return !full;
     }
 
@@ -92,7 +92,7 @@ private:
     {
         bool empty = m_queue.empty();
         if (empty)
-            cout << "empty,waiting，thread id: " << this_thread::get_id() << endl;
+            cout << "empty,waiting,thread id: " << this_thread::get_id() << endl;
         return !empty;
     }
 

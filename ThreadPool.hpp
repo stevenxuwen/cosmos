@@ -7,6 +7,7 @@
 #include "SyncQueue.hpp"
 
 const int MaxTaskCount = 100;
+/*一个线程池的包装类*/
 class ThreadPool
 {
 public:
